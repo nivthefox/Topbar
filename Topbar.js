@@ -17,7 +17,7 @@ var Topbar = function() {
             success : function(data) {
                 if (data.length > 0) {
                     content             = data;
-                    self.setupToolbar();
+                    self.setupTopbar();
                 }
             }
         });
