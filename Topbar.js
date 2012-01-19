@@ -15,8 +15,8 @@ var Topbar = function() {
         $.ajax({
             url                         : mw.config.get('wgArticlePath').replace('$1', 'MediaWiki:Topbar?action=render'),
             success : function(data) {
-                data                    = data.replace(/<!--(.*?)-->/gm, null);
-                data                    = data.replace(/(\n|\r)/gm, null);
+                data                    = data.replace(/<!--(.*?)-->/gm, '');
+                data                    = data.replace(/(\n|\r)/gm, '');
 
                 if (data.length > 0) {
                     content             = data;
