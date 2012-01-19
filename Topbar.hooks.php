@@ -46,8 +46,8 @@ class TopbarHooks {
 
         global $wgScriptPath;
 
-        $out->addScriptFile($wgScriptPath . '/extensions/Topbar/Topbar.js');
-        $out->addStyle($wgScriptPath . '/extensions/Topbar/Topbar.css');
+        $out->addScriptFile($wgScriptPath . '/extensions/Topbar/js/Topbar.js');
+        $out->addStyle($wgScriptPath . '/extensions/Topbar/css/Topbar.css');
         return true;
     }
 }
