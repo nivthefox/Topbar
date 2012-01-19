@@ -29,10 +29,10 @@ class TopbarHooks {
     public function __construct() {
         global $wgHooks;
 
-        $wgHooks['SkinTemplateNavigation'][]               = 'TopbarHooks::setupNavigation';
+        $wgHooks['SkinTemplateNavigation'][]               = 'TopbarHooks::skinTemplateNavigation';
     }
 
-    public static function Navigation(&$template, &$links) {
+    public static function skinTemplateNavigation(&$template, &$links) {
         echo '<pre>'; print_r( $template ); print_r( $links); echo '</pre>';
     }
 }
