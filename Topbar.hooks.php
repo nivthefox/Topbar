@@ -9,8 +9,8 @@
  *
  * @author      Kevin Kragenbrink <kevin@writh.net>
  * @created     18th January 2012
- * @edited      18th January 2012
- * @version     0.1.0
+ * @edited      19th January 2012
+ * @version     0.2.0
  */
 
 // Validate entrypoint.
@@ -47,6 +47,7 @@ class TopbarHooks {
         global $wgScriptPath;
 
         $out->addScriptFile($wgScriptPath . '/extensions/Topbar/Topbar.js');
+        $out->addStyle($wgScriptPath . '/extensions/Topbar/Topbar.css');
         return true;
     }
 }
