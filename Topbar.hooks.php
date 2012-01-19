@@ -10,7 +10,7 @@
  * @author      Kevin Kragenbrink <kevin@writh.net>
  * @created     18th January 2012
  * @edited      19th January 2012
- * @version     0.2.0
+ * @version     1.0.0
  */
 
 // Validate entrypoint.

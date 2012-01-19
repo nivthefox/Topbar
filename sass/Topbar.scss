@@ -9,51 +9,28 @@
  * @author      Kevin Kragenbrink <kevin@writh.net>
  * @created     19th January 2012
  * @edited      19th January 2012
- * @version     0.1.0
+ * @version     1.1.0
  */
 
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-.clearfix {display: inline-block;}
-
-/* Hides from IE5/Mac \*/
-* html .clearfix {height: 1px;}
-.clearfix {display: block;}
-/* End hide from IE5/Mac */
-
-#content {
-    position                            : relative;
-}
-
 #firstHeading {
-    margin                              : 25px 0 0 0;
+    margin                              : 0 0 0 1.5em;
 }
 
 #mw-writh-topbar {
     background                          : rgba(178,212,239,.5);
-    position                            : absolute;
-    left                                : 1px;
-    top                                 : 0;
     z-index                             : 100;
     width                               : 100%;
     height                              : 1.25em;
     font-size                           : 10pt;
 
     .mw-writh-glass {
-background: -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 25%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(25%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        background                      : -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 25%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+        background                      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(25%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+        background                      : -webkit-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+        background                      : -o-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+        background                      : -ms-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* IE10+ */
+        background                      : linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 25%,rgba(255,255,255,1) 100%); /* W3C */
+        filter                          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
         display                         : block;
         height                          : 1.25em;
@@ -81,7 +58,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', e
                 border                  : 1px solid rgba(178,212,239,1);
 
                 position                : absolute;
-                /*left                    : -999em;*/
                 visibility              : hidden;
 
                 li {
@@ -103,20 +79,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', e
                         border          : none;
 
                         &:hover {
-                        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
-                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(25%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
-                        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
-                        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
-                        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* IE10+ */
-                        background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* W3C */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#40ffffff',GradientType=0 ); /* IE6-9 */
+                        background      : -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+                        background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(25%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+                        background      : -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+                        background      : -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+                        background      : -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+                        background      : linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0.25) 100%); /* W3C */
+                        filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#40ffffff',GradientType=0 ); /* IE6-9 */
                         }
                     }
                 }
             }
 
             &:hover ul {
-                /*left                    : auto;*/
                 visibility              : visible;
             }
 

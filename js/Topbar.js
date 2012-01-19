@@ -9,7 +9,7 @@
  * @author      Kevin Kragenbrink <kevin@writh.net>
  * @created     18th January 2012
  * @edited      19th January 2012
- * @version     0.1.0
+ * @version     1.0.0
  */
 
 (function($, undefined) {
@@ -26,7 +26,7 @@ var Topbar = function() {
      * Adds the Topbar into the Mediawiki and inserts the content.
      */
     self.setupTopbar = function() {
-        $('#content').prepend('<div id="mw-writh-topbar" class="clearfix"></div>');
+        $('#bodyContent').prepend('<div id="mw-writh-topbar" class="clearfix"></div>');
         topbar                          = $('#mw-writh-topbar');
         topbar.append('<span class="mw-writh-glass">' + content + '</span>');
     };
