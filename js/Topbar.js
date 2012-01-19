@@ -26,9 +26,9 @@ var Topbar = function() {
      * Adds the Topbar into the Mediawiki and inserts the content.
      */
     self.setupTopbar = function() {
-        $('#content').prepend('<div id="mw-writh-topbar"></div>');
+        $('#content').prepend('<div id="mw-writh-topbar" class="clearfix"></div>');
         topbar                          = $('#mw-writh-topbar');
-        topbar.append(content);
+        topbar.append('<span class="mw-writh-glass">' + content + '</span>');
     };
 
     /**

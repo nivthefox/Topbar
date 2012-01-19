@@ -9,8 +9,8 @@
  *
  * @author      Kevin Kragenbrink <kevin@writh.net>
  * @created     18th January 2012
- * @edited      18th January 2012
- * @version     0.1.0
+ * @edited      19th January 2012
+ * @version     1.0.0
  */
 
 
@@ -27,10 +27,10 @@ $wgAutoloadClasses['TopbarHooks']                           = WRITH_TOPBAR_ROOT 
 $wgExtensionCredits['Other'][] = array(
     'path'                                                  => __FILE__,
     'name'                                                  => "Topbar",
-    'description'                                           => "Adds Topbar navigation to Mediawiki.  A part of a suite of extensions by [http://www.writh.net Writh.net] aimed at combining the beauty of Wikidot with the power of MediaWiki.",
+    'description'                                           => "Adds Topbar navigation to Mediawiki.  A part of a suite of extensions by [http://github.com/Writh Writh.net] aimed at combining the beauty of Wikidot with the power of MediaWiki.",
     'version'                                               => '0.1.0',
     'author'                                                => "[http://en.wikipedia.org/wiki/User:Kkragenbrink Kevin Kragenbrink]",
-    'url'                                                   => "http://www.writh.net/wiki/Extension:Topbar",
+    'url'                                                   => "http://www.mediawiki.org/wiki/Extension:Topbar",
 );
 
 // Bootstrap.
