@@ -9,7 +9,7 @@
  * @author      Kevin Kragenbrink <kevin@writh.net>
  * @created     19th January 2012
  * @edited      19th January 2012
- * @version     1.1.2
+ * @version     1.1.3
  */
 
 #mw-writh-topbar {
@@ -17,9 +17,9 @@
     border                              : 1px solid rgba(178,212,239,1);
     z-index                             : 100;
     width                               : 100%;
-    height                              : 1.25em;
+    height                              : 1.5em;
     font-size                           : 10pt;
-    margin                              : -2px 0 0 0;
+    margin                              : -3px 0 0 -1px;
 
     .mw-writh-glass {
         background                      : -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 25%, rgba(255,255,255,1) 100%); /* FF3.6+ */
@@ -31,16 +31,16 @@
         filter                          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
         display                         : block;
-        height                          : 1.25em;
+        height                          : 1.5em;
         width                           : 100%;
     }
 
     ul {
         display                         : block;
-        margin                          : 0;
+        margin                          : 0 0 0 -1px;
         padding                         : 0;
         list-style                      : none;
-        line-height                     : 1.125em;
+        line-height                     : 1.5em;
 
         li {
             list-style                  : none;
