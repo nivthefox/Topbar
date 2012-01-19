@@ -29,10 +29,24 @@ class TopbarHooks {
     public function __construct() {
         global $wgHooks;
 
-        $wgHooks['SkinTemplateNavigation'][]               = 'TopbarHooks::skinTemplateNavigation';
+        // Setup hooks.
+        $wgHooks['BeforePageDisplay'][]               = 'TopbarHooks::hookBeforePageDisplay';
     }
 
-    public static function skinTemplateNavigation(&$template, &$links) {
-        echo '<pre>'; print_r( $template ); print_r( $links); echo '</pre>';
+    /**
+     * Adds the topbar navigation to the page.
+     *
+     * @static
+     * @param &$out         OutputPage  The Page being rendered
+     * @param &$skin        Skin        The Skin object that will be used to render the page.
+     * @return bool
+     */
+    public static function hookBeforePageDisplay(&$out, &$skin) {
+        wfDebugLog('Topbar', __METHOD__);
+
+        global $wgScriptPath;
+
+        $out->addScriptFile($wgScriptPath . '/extensions/Topbar/Topbar.js');
+        return true;
     }
 }
